@@ -10,12 +10,24 @@
             <!-- <span class="button__icon"><img src="images/icon-1.png"></span> -->
             <span class="button__text">Generate passwords</span>
         </button>
-        <hr>
-        <button class="button__password" id="pass1-btn" onclick="copyPassword(1)"></button>
-        <button class="button__password" id="pass2-btn" onclick="copyPassword(2)"></button>
         <br>
-        <button class="button__password" id="pass3-btn" onclick="copyPassword(3)"></button>
-        <button class="button__password" id="pass4-btn" onclick="copyPassword(4)"></button>
+        <label>Password length:</label>
+        <select name="length" id="length-sel">
+            <option value="6" selected="selected">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+        </select>
+        <hr>
+        <input type="text" class="password_text" id="pass1-txt" onclick="copyPassword(id)" readonly></input>
+        <input type="text" class="password_text" id="pass2-txt" onclick="copyPassword(id)" readonly></input>
+        <br>
+        <input type="text" class="password_text" id="pass3-txt" onclick="copyPassword(id)" readonly></input>
+        <input type="text" class="password_text" id="pass4-txt" onclick="copyPassword(id)" readonly></input>
+        <br><br><br>
+        <p id="copy-lbl"></p>
         <script src="index.js"></script>
     </body>
 </html>
